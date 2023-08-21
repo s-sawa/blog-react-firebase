@@ -22,11 +22,11 @@ const CreatePost = ({ isAuth }) => {
     navigate("/");
   };
 
-  useEffect(() => {
-    if (!isAuth) {
-      navigate("/login");
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (!isAuth) {
+  //     navigate("/login");
+  //   }
+  // }, []);
 
   return (
     <div className="createPostPage">
