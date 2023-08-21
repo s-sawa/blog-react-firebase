@@ -13,7 +13,7 @@ const Navbar = ({ isAuth }) => {
         ホーム
       </Link>
 
-      {!isAuth ? (
+      {/* {!isAuth ? (
         <Link to="/login">
           <AiOutlineLogin />
           ログイン
@@ -29,7 +29,23 @@ const Navbar = ({ isAuth }) => {
             ログアウト
           </Link>
         </>
-      )}
+      )} */}
+
+      <Link to="/login">
+        <AiOutlineLogin />
+        ログイン
+      </Link>
+
+      <>
+        <Link to="/createpost">
+          <MdOutlineEditNote />
+          記事投稿
+        </Link>
+        <Link to="/logout">
+          <AiOutlineLogin />
+          ログアウト
+        </Link>
+      </>
     </nav>
   );
 };
